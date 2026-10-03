@@ -1,0 +1,16 @@
+[project]
+name = "slidemaster"
+version = "0.1.0"
+description = "Lossless slideshow master composition library (PNG + WAV -> MOV via FFmpeg)"
+requires-python = ">=3.10"
+dependencies = ["numpy", "Pillow"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["slidemaster*"]
